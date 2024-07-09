@@ -7,13 +7,15 @@ import { TestComponent } from './test/test.component';
 import {FormsModule} from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { ChildComponent } from './child/child.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     DirectivesComponent,
-    ChildComponent
+    ChildComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
