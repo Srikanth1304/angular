@@ -8,6 +8,9 @@ import {FormsModule} from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { ChildComponent } from './child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeService } from './employee.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { PipesComponent } from './pipes/pipes.component';
     TestComponent,
     DirectivesComponent,
     ChildComponent,
-    PipesComponent
+    PipesComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,8 @@ import { PipesComponent } from './pipes/pipes.component';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    EmployeeService
   ],
   bootstrap: [AppComponent]
 })
