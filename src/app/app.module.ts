@@ -11,6 +11,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeService } from './employee.service';
+import { FetcHttpComponent } from './fetc-http/fetc-http.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { EmployeeService } from './employee.service';
     ChildComponent,
     PipesComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    FetcHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [
